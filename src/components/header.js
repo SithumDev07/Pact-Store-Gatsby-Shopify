@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header className="w-screen overflow-hidden">
       <div className="bg-theme-gray h-14 w-full text-center text-gray-100 text-sm flex justify-center items-center">
-        <p>Free Shipping on order over $100</p>
+        <p>Free Shipping on order over <span className="font-extrabold">$100</span></p>
       </div>
       <nav className="h-20 bg-gray-50 hover:bg-theme-hover-gray transform transition duration-500 flex items-center justify-between px-14">
         <ul className="flex items-center font-Aventra text-gray-800">
@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
         <ul className="flex items-center font-Aventra text-gray-800">
           <Link className="hover:bg-theme-gray transform transition duration-300 hover:text-gray-50 px-5 py-2 lg:text-sm xl:text-base" to="/about">About</Link>
           <Link className="hover:bg-theme-gray transform transition duration-300 hover:text-gray-50 px-5 py-2 lg:text-sm xl:text-base" to="/my-account">My Account</Link>
-          <Link className="flex items-center" to="/cart"><Bag stroke="#4C4C4C" width={30} height={30} /> <p className="ml-2">0</p></Link>
+          <Link className="flex items-center ml-4" to="/cart"><Bag stroke="#4C4C4C" width={30} height={30} /> <p className="ml-2">0</p></Link>
         </ul>
       </nav>
   </header>

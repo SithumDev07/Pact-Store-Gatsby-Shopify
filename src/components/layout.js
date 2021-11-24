@@ -27,8 +27,8 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
-        <main>{children}</main>
-        <footer className="text-gray-50 bg-theme-gray fixed left-0 right-0 bottom-0" style={{ height: '400px' }}>
+        <main className="lg:container xl:w-3/4 mx-auto">{children}</main>
+        <footer className="text-gray-50 bg-theme-gray" style={{ height: '400px' }}>
           <div className="container mx-auto pt-8 pb-3 font-Aventra h-full">
             <div className="flex flex-wrap -mx-px overflow-hidden h-full">
               <div className="my-1 px-1 w-full overflow-hidden md:w-1/3 lg:my-2 lg:px-2 lg:w-1/3 xl:my-3 xl:px-3 xl:w-1/3">

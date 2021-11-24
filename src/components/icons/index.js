@@ -1,3 +1,7 @@
 export { default as Bag } from './Bag'
+export { default as Fastco } from './Fastco'
+export { default as Forbes } from './Forbes'
 export { default as Logo } from './Logo'
+export { default as Mensjournal } from './Mensjournal'
 export { default as RightArrowLong } from './RightArrowLong'
+export { default as Shape } from './Shape'
